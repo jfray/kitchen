@@ -5,9 +5,9 @@ The name kitchen refers to the use of different commercial kitchen metaphors bei
 Order
 * A task/project request
 * An Order contains limited information
-** What needs to be done
-** When it needs to be done by
-** Priority
+ * What needs to be done
+ * When it needs to be done by
+ * Priority
 
 Customer
 * Customers are the business owner of an Order
