@@ -22,25 +22,25 @@ Reservation
 
 Station
 * An order can be in one of the following Stations
-** Cooking: Currently being worked on (Active Tasks)
-** Thawed: Can be worked on but not currently (Inactive Tasks)
-** Frozen: A Thawed Order that will not be worked on due to lack of priority
-** Burnt: An Order that is past its Reservation
+ * Cooking: Currently being worked on (Active Tasks)
+ * Thawed: Can be worked on but not currently (Inactive Tasks)
+ * Frozen: A Thawed Order that will not be worked on due to lack of priority
+ * Burnt: An Order that is past its Reservation
 
 Priority
 * Within each Station, there are 3 priorities, with specific constraints
-** Cooking
-*** High Priority: There can only ever be 1 High Priority Order in this Station
-*** Medium Priority: There can only ever be 2 Medium Priority Orders in this Station
-*** Low Priority: There can only ever be 3 Low Priority Orders in this Station
-** Thawed
-*** High Priority: There can only ever be 5 High Priority Orders in this Station
-*** Medium Priority: There can only ever be 10 Medium Priority Orders in this Station
-*** Low Priority: There can only ever be 15 Low Priority Orders in this Station
-** Frozen
-*** Orders in this Station are not prioritized and there are no limits to how many can exist
-** Burnt
-*** The constraints around this Station are still being fleshed out
+ * Cooking
+  * High Priority: There can only ever be 1 High Priority Order in this Station
+  * Medium Priority: There can only ever be 2 Medium Priority Orders in this Station
+  * Low Priority: There can only ever be 3 Low Priority Orders in this Station
+ * Thawed
+  * High Priority: There can only ever be 5 High Priority Orders in this Station
+  * Medium Priority: There can only ever be 10 Medium Priority Orders in this Station
+  * Low Priority: There can only ever be 15 Low Priority Orders in this Station
+ * Frozen
+  * Orders in this Station are not prioritized and there are no limits to how many can exist
+ * Burnt
+  * The constraints around this Station are still being fleshed out
 
 Line
 * The Line is the list of people available for any given Order
