@@ -124,7 +124,10 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django_extensions',
-    'kitchen'
+    'kitchen',
+   # 'reversion',
+   # 'reversion_compare',
+   # 'south'
 )
 
 # A sample logging configuration. The only tangible logging
