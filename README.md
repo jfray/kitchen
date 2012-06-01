@@ -46,7 +46,7 @@ Line
 * The Line is the list of people available for any given Order
 
 Party
-* The Party is the list of people currently assigned to any given Order
+* The Party is the list of stakeholders for any given Order
 
 Ingredients
 * Ingredients are effectively a list of previous Orders that can be used to estimate Reservations
