@@ -1,3 +1,8 @@
+Requirements
+
+Autoenv
+* https://github.com/kennethreitz/autoenv
+---
 This is an idea I have for project management, somewhat based on concepts from Kanban.
 
 The name kitchen refers to the use of different commercial kitchen metaphors being used within the application:
