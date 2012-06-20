@@ -1,7 +1,13 @@
-Requirements
+How to start hacking:
 
-Autoenv
-* https://github.com/kennethreitz/autoenv
+cd into either of flask or django, then..
+cd into the directory named after the storage provider, then..
+source .setup
+
+if you're creating a new project/storage provider, then do the following within that directory:
+
+echo "source ../../global-app-setup" > .setup
+
 ---
 This is an idea I have for project management, somewhat based on concepts from Kanban.
 

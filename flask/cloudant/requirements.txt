@@ -1,3 +1,4 @@
 flask
 couchdb
 Flask-CouchDB
+requests

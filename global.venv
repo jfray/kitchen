@@ -1,8 +1,0 @@
-sanitized_path=$(echo ${PWD} | sed -e "s#/src/kitchen/.*#/src/kitchen/#")
-project_name=${PWD##*/}
-
-# since we don't really want to do anything in a subdir, we're leaving it out
-if [ "${sanitized_path}/${project_name}" == "${PWD}" ]; then
-  # you're in the immediate directory, symlink a copy in each subdirectory
-  find ${sanitized_path}/${project_name} -type d -exec ln -s ${sanitized_path}/global.venv {}/.venv \;
-fi

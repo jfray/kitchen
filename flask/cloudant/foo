@@ -1,0 +1,4 @@
+while [ 1 ]; do
+  curl http://typograffit.com/rest_json/posts/generate/body:k%20i%20t%20c%20h%20e%20n
+  sleep 10
+done

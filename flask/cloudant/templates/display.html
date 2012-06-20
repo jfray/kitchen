@@ -6,9 +6,9 @@
 #}
 <title>Guestbook</title>
 
-<h1>Guestbook</h1>
+<p><img src="http://typograffit.com/rest_json/posts/getImage/post_id:{{ pic }}"></p>
 
-<h2>Sign</h2>
+<h2>Kitchen</h2>
 
 <form method=post action="{{ url_for('post') }}">
     <dl>
@@ -26,7 +26,7 @@
 
 <ul>
 {%- for signature in page.items %}
-    <li><p>{{ signature.message }}
+    <li><p><img src="http://typograffit.com/rest_json/posts/getImage/post_id:{{ signature.message }}">
         <p><strong>{{ signature.author }}</strong>
            on {{ signature.time.strftime('%A, %B %d at %I:%M:%S %p') }}
 {%- endfor %}

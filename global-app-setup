@@ -1,0 +1,6 @@
+deactivate >/dev/null 2>&1 && echo "Deactivated previous virtualenv"
+venv=$(pwd | sed 's/.*kitchen/kitchen/' | sed -e 's#/#_#g')
+mkvirtualenv ${venv} || workon ${venv}
+for package in $(cat requirements.txt); do
+  pip install ${package}
+done

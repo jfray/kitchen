@@ -1,0 +1,6 @@
+flask
+flask-script
+WTForms
+requests
+mongoengine
+flask-mongoengine
