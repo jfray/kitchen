@@ -23,12 +23,7 @@ TYPO_URL="http://typograffit.com/rest_json/posts/generate/body:"
 app.config.from_object(__name__)
 
 class Signature(Document):
-  name = TextField()
-  description = TextField()
-  expo = DictField(Mapping.build(
-           name = TextField(),
-           email = TextField()
-         ))
+  message = TextField()
   author = TextField()
   time = DateTimeField(default=datetime.datetime.now())
 
@@ -55,8 +50,6 @@ def post():
   if not message or not author:
     flash('You must fill in both a message and an author')
   else:
-    r = requests.get("%s:%s" % (TYPO_URL ,message))
-    message = r.json['post_id']
     signature = Signature(message=message, author=author)
     signature.store()
     flash('Signature stored')

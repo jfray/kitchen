@@ -26,7 +26,7 @@
 
 <ul>
 {%- for signature in page.items %}
-    <li><p><img src="http://typograffit.com/rest_json/posts/getImage/post_id:{{ signature.message }}">
+    <li><p>{{ signature.message }}</p>
         <p><strong>{{ signature.author }}</strong>
            on {{ signature.time.strftime('%A, %B %d at %I:%M:%S %p') }}
 {%- endfor %}

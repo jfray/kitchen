@@ -2,13 +2,14 @@ How to start hacking:
 
 cd into either of flask or django, then..
 cd into the directory named after the storage provider, then..
-source .setup
+pip_setup
 
-if you're creating a new project/storage provider, then do the following within that directory:
-
-echo "source ../../global-app-setup" > .setup
+Requirements:
+* a checked out and installed version of the threefold repository
+* bashrc.d enabled, specifically 10_python_virtualenv.rc
 
 ---
+
 This is an idea I have for project management, somewhat based on concepts from Kanban.
 
 The name kitchen refers to the use of different commercial kitchen metaphors being used within the application:

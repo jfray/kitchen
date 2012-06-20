@@ -1,1 +1,1 @@
-cd into the directory and source .setup to get everything configured
+cd into the directory and run pip_setup to get everything configured
